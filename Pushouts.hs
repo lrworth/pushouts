@@ -3,7 +3,7 @@
 {-# LANGUAGE FunctionalDependencies #-}
 {-# LANGUAGE GADTs #-}
 
-module MyLib  where
+module Pushouts  where
 
 import Data.Proxy
 
@@ -38,6 +38,7 @@ instance Pushout (Boring a b) () (Maybe a) (Maybe b) where
   injectR _ (Just b) = There b
 
 
+ex1, ex2, ex3, ex4 :: Wedge Int String
 ex1 = injectR (Proxy :: Proxy (Boring Int String)) Nothing
 ex2 = injectR (Proxy :: Proxy (Boring Int String)) (Just "hello world")
 ex3 = injectL (Proxy :: Proxy (Boring Int String)) Nothing

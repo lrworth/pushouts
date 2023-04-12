@@ -19,7 +19,7 @@ maintainer:         luke@worth.id.au
 extra-source-files: CHANGELOG.md
 
 library
-    exposed-modules:  MyLib
+    exposed-modules:  Pushouts
 
     -- Modules included in this library but not exported.
     -- other-modules:
